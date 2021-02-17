@@ -1,4 +1,4 @@
-package designPatterns.builder;
+package designPatterns.creational.builder;
 
 /**
  * @author Simar Preet
@@ -10,25 +10,18 @@ public class Car {
     String typeOfChassis;
     int numberOfWindows;
 
-    public int getNumberOfSeats() {
-        return numberOfSeats;
+    public Car() {
     }
+
 
     public void setNumberOfSeats(int numberOfSeats) {
         this.numberOfSeats = numberOfSeats;
-    }
-
-    public String getTypeOfChassis() {
-        return typeOfChassis;
     }
 
     public void setTypeOfChassis(String typeOfChassis) {
         this.typeOfChassis = typeOfChassis;
     }
 
-    public int getNumberOfWindows() {
-        return numberOfWindows;
-    }
 
     public void setNumberOfWindows(int numberOfWindows) {
         this.numberOfWindows = numberOfWindows;

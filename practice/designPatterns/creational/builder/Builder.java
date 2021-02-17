@@ -1,4 +1,4 @@
-package designPatterns.builder;
+package designPatterns.creational.builder;
 
 /**
  * @author Simar Preet
