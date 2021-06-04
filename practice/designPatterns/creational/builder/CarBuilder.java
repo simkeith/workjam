@@ -1,4 +1,4 @@
-package designPatterns.builder;
+package designPatterns.creational.builder;
 
 /**
  * @author Simar Preet
@@ -7,23 +7,20 @@ package designPatterns.builder;
  */
 public class CarBuilder implements Builder {
 
-    Car car;
+    Car car = new Car();
 
     @Override
     public void buildSeats(int n) {
-        System.out.println("building car seats");
         car.setNumberOfSeats(n);
     }
 
     @Override
     public void buildWindows(int n) {
-        System.out.println("building car windows");
-        car.setNumberOfSeats(n);
+        car.setNumberOfWindows(n);
     }
 
     @Override
     public void buildChassis(String type) {
-        System.out.println("building car chassis");
         car.setTypeOfChassis(type);
     }
 

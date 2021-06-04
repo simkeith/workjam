@@ -12,5 +12,5 @@ package lambdas;
 
 public interface FirstFunctionalInterface {
     public void myMethod();
-    default void defaultVoid(){ }           // can have params and/or body
+     default void defaultVoid(){}           // can have params and/or body
 }

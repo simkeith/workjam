@@ -1,4 +1,4 @@
-package designPatterns.builder;
+package designPatterns.creational.builder;
 
 /**
  * @author Simar Preet
@@ -23,9 +23,15 @@ public class CarBuilderDemo {
         CarBuilder carBuilder = new CarBuilder();
         director.buildCar(carBuilder);
         Car c = carBuilder.getResult();
+        System.out.println("Car has " + c.numberOfSeats + " seats");
+        System.out.println("Car has " + c.numberOfWindows + " windows");
+        System.out.println("Car has " + c.typeOfChassis + " chassis");
 
         CarManualBuilder carManualBuilder = new CarManualBuilder();
         director.buildCarManual(carManualBuilder);
         CarManual cm = carManualBuilder.getResult();
+        System.out.println("Car manual has " + cm.numberOfSeats + " seats");
+        System.out.println("Car manual has " + cm.numberOfWindows + " windows");
+        System.out.println("Car manual has " + cm.typeOfChassis + " chassis");
     }
 }

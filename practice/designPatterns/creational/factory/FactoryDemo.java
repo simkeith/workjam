@@ -1,4 +1,4 @@
-package designPatterns.factory;
+package designPatterns.creational.factory;
 
 /**
  * @author Simar Preet
@@ -13,7 +13,7 @@ package designPatterns.factory;
  * when you don’t know beforehand the exact types and dependencies of the objects your code should work with.
  * provide users with a way to extend the internal components of your application
  */
-public class FactoryMethod {
+public class FactoryDemo {
 
     public static void main(String[] args) {
         ShapeFactory factory = new ShapeFactory();
